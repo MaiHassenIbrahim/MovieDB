@@ -17,6 +17,8 @@
 		2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292378D2BD458E8004FFF57 /* MovieAPIService.swift */; };
 		229237902BD4591B004FFF57 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292378F2BD4591B004FFF57 /* APIEndpoint.swift */; };
 		229237922BD45943004FFF57 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237912BD45943004FFF57 /* APIError.swift */; };
+		229237942BD469C3004FFF57 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237932BD469C3004FFF57 /* Movie.swift */; };
+		229237972BD46A01004FFF57 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 229237962BD46A01004FFF57 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		2292378D2BD458E8004FFF57 /* MovieAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
 		2292378F2BD4591B004FFF57 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		229237912BD45943004FFF57 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		229237932BD469C3004FFF57 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229237972BD46A01004FFF57 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +190,7 @@
 		229237862BD44A57004FFF57 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				229237932BD469C3004FFF57 /* Movie.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -248,6 +253,9 @@
 			dependencies = (
 			);
 			name = MovieDB;
+			packageProductDependencies = (
+				229237962BD46A01004FFF57 /* SDWebImageSwiftUI */,
+			);
 			productName = MovieDB;
 			productReference = 229236FE2BD3CA3F004FFF57 /* MovieDB.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +328,9 @@
 				Base,
 			);
 			mainGroup = 229236F52BD3CA3F004FFF57;
+			packageReferences = (
+				229237952BD46A01004FFF57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 229236FF2BD3CA3F004FFF57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,6 +375,7 @@
 			files = (
 				229237042BD3CA3F004FFF57 /* ContentView.swift in Sources */,
 				2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */,
+				229237942BD469C3004FFF57 /* Movie.swift in Sources */,
 				229237022BD3CA3F004FFF57 /* MovieDBApp.swift in Sources */,
 				229237922BD45943004FFF57 /* APIError.swift in Sources */,
 				229237902BD4591B004FFF57 /* APIEndpoint.swift in Sources */,
@@ -696,6 +708,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		229237952BD46A01004FFF57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		229237962BD46A01004FFF57 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 229237952BD46A01004FFF57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 229236F62BD3CA3F004FFF57 /* Project object */;
 }
