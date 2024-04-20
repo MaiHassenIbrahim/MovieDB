@@ -14,6 +14,9 @@
 		229237132BD3CA41004FFF57 /* MovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237122BD3CA41004FFF57 /* MovieDBTests.swift */; };
 		2292371D2BD3CA41004FFF57 /* MovieDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292371C2BD3CA41004FFF57 /* MovieDBUITests.swift */; };
 		2292371F2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292371E2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift */; };
+		2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292378D2BD458E8004FFF57 /* MovieAPIService.swift */; };
+		229237902BD4591B004FFF57 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292378F2BD4591B004FFF57 /* APIEndpoint.swift */; };
+		229237922BD45943004FFF57 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237912BD45943004FFF57 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		229237182BD3CA41004FFF57 /* MovieDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2292371C2BD3CA41004FFF57 /* MovieDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBUITests.swift; sourceTree = "<group>"; };
 		2292371E2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2292378D2BD458E8004FFF57 /* MovieAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
+		2292378F2BD4591B004FFF57 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		229237912BD45943004FFF57 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 		229237812BD4481A004FFF57 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				2292378D2BD458E8004FFF57 /* MovieAPIService.swift */,
+				2292378F2BD4591B004FFF57 /* APIEndpoint.swift */,
+				229237912BD45943004FFF57 /* APIError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -354,7 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				229237042BD3CA3F004FFF57 /* ContentView.swift in Sources */,
+				2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */,
 				229237022BD3CA3F004FFF57 /* MovieDBApp.swift in Sources */,
+				229237922BD45943004FFF57 /* APIError.swift in Sources */,
+				229237902BD4591B004FFF57 /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
