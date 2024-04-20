@@ -94,6 +94,10 @@
 		229237002BD3CA3F004FFF57 /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				229237862BD44A57004FFF57 /* Entities */,
+				229237832BD44858004FFF57 /* Scenes */,
+				229237822BD44847004FFF57 /* Extensions */,
+				229237812BD4481A004FFF57 /* Networking */,
 				229237012BD3CA3F004FFF57 /* MovieDBApp.swift */,
 				229237032BD3CA3F004FFF57 /* ContentView.swift */,
 				229237052BD3CA40004FFF57 /* Assets.xcassets */,
@@ -125,6 +129,98 @@
 				2292371E2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift */,
 			);
 			path = MovieDBUITests;
+			sourceTree = "<group>";
+		};
+		229237812BD4481A004FFF57 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		229237822BD44847004FFF57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		229237832BD44858004FFF57 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				229237842BD448A8004FFF57 /* MoviesListScreen */,
+				229237852BD448E7004FFF57 /* MovieDetailsScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		229237842BD448A8004FFF57 /* MoviesListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2292378B2BD44AB7004FFF57 /* MoviesListViewModel */,
+				2292378A2BD44AA6004FFF57 /* MoviesListModel */,
+				229237882BD44A76004FFF57 /* MoviesListiew */,
+			);
+			path = MoviesListScreen;
+			sourceTree = "<group>";
+		};
+		229237852BD448E7004FFF57 /* MovieDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2292378C2BD44B29004FFF57 /* MovieDetailsViewModel */,
+				229237892BD44A97004FFF57 /* MovieDetailsModel */,
+				229237872BD44A67004FFF57 /* MovieDetailsView */,
+			);
+			path = MovieDetailsScreen;
+			sourceTree = "<group>";
+		};
+		229237862BD44A57004FFF57 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		229237872BD44A67004FFF57 /* MovieDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetailsView;
+			sourceTree = "<group>";
+		};
+		229237882BD44A76004FFF57 /* MoviesListiew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoviesListiew;
+			sourceTree = "<group>";
+		};
+		229237892BD44A97004FFF57 /* MovieDetailsModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetailsModel;
+			sourceTree = "<group>";
+		};
+		2292378A2BD44AA6004FFF57 /* MoviesListModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoviesListModel;
+			sourceTree = "<group>";
+		};
+		2292378B2BD44AB7004FFF57 /* MoviesListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoviesListViewModel;
+			sourceTree = "<group>";
+		};
+		2292378C2BD44B29004FFF57 /* MovieDetailsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetailsViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
