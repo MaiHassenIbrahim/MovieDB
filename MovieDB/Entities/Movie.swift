@@ -25,6 +25,15 @@ struct Movie: Decodable, Hashable, Identifiable {
         let urlString = imageBaseUrl + posterPath
         return URL(string: urlString)
     }
+    
+    var year: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let date = formatter.date(from: releaseDate) ?? Date()
+        formatter.dateFormat = "yyyy"
+        let year = formatter.string(from: date)
+        return year
+    }
 }
 
 struct MovieListResponse: Decodable {

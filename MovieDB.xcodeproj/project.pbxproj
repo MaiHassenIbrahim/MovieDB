@@ -19,6 +19,11 @@
 		229237922BD45943004FFF57 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237912BD45943004FFF57 /* APIError.swift */; };
 		229237942BD469C3004FFF57 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237932BD469C3004FFF57 /* Movie.swift */; };
 		229237972BD46A01004FFF57 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 229237962BD46A01004FFF57 /* SDWebImageSwiftUI */; };
+		229237992BD46D2F004FFF57 /* MoviesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237982BD46D2F004FFF57 /* MoviesListRepository.swift */; };
+		2292379B2BD46DC0004FFF57 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292379A2BD46DC0004FFF57 /* MoviesListViewModel.swift */; };
+		2292379F2BD470D6004FFF57 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292379E2BD470D6004FFF57 /* MoviesListView.swift */; };
+		229237A12BD47500004FFF57 /* URL+QueryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237A02BD47500004FFF57 /* URL+QueryParam.swift */; };
+		229237A32BD4B319004FFF57 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237A22BD4B319004FFF57 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		2292378F2BD4591B004FFF57 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		229237912BD45943004FFF57 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		229237932BD469C3004FFF57 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		229237982BD46D2F004FFF57 /* MoviesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRepository.swift; sourceTree = "<group>"; };
+		2292379A2BD46DC0004FFF57 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
+		2292379E2BD470D6004FFF57 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		229237A02BD47500004FFF57 /* URL+QueryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParam.swift"; sourceTree = "<group>"; };
+		229237A22BD4B319004FFF57 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +164,8 @@
 		229237822BD44847004FFF57 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				229237A02BD47500004FFF57 /* URL+QueryParam.swift */,
+				229237A22BD4B319004FFF57 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +217,7 @@
 		229237882BD44A76004FFF57 /* MoviesListiew */ = {
 			isa = PBXGroup;
 			children = (
+				2292379E2BD470D6004FFF57 /* MoviesListView.swift */,
 			);
 			path = MoviesListiew;
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 		2292378A2BD44AA6004FFF57 /* MoviesListModel */ = {
 			isa = PBXGroup;
 			children = (
+				229237982BD46D2F004FFF57 /* MoviesListRepository.swift */,
 			);
 			path = MoviesListModel;
 			sourceTree = "<group>";
@@ -226,6 +240,7 @@
 		2292378B2BD44AB7004FFF57 /* MoviesListViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2292379A2BD46DC0004FFF57 /* MoviesListViewModel.swift */,
 			);
 			path = MoviesListViewModel;
 			sourceTree = "<group>";
@@ -373,12 +388,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2292379F2BD470D6004FFF57 /* MoviesListView.swift in Sources */,
 				229237042BD3CA3F004FFF57 /* ContentView.swift in Sources */,
+				229237A12BD47500004FFF57 /* URL+QueryParam.swift in Sources */,
 				2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */,
+				229237992BD46D2F004FFF57 /* MoviesListRepository.swift in Sources */,
 				229237942BD469C3004FFF57 /* Movie.swift in Sources */,
 				229237022BD3CA3F004FFF57 /* MovieDBApp.swift in Sources */,
 				229237922BD45943004FFF57 /* APIError.swift in Sources */,
+				229237A32BD4B319004FFF57 /* Date.swift in Sources */,
 				229237902BD4591B004FFF57 /* APIEndpoint.swift in Sources */,
+				2292379B2BD46DC0004FFF57 /* MoviesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +570,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,6 +600,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,8 +10,14 @@ import SwiftUI
 @main
 struct MovieDBApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+
+            WindowGroup {
+                let apiService = MovieAPIService()
+                let movieRepository = MovieDataRepository(apiService: apiService)
+                let viewModel = MoviesListViewModel(movieRepository: movieRepository)
+                MoviesListView(movieListViewModel: viewModel)
+            }
         }
     }
-}
+
+
