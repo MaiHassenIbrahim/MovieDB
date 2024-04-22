@@ -31,4 +31,13 @@ class MoviesListViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+    
+ 
+    func launchMovieDetailsData() -> MovieDetailsViewModel{
+        let apiService = MovieAPIService()
+        let movieRepository = MovieDetailsDataRepository(apiService: apiService)
+        let viewModel = MovieDetailsViewModel(movieDetailsRepository: movieRepository)
+        return viewModel
+     
+    }
 }

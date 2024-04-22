@@ -20,10 +20,10 @@ struct MoviesListView: View {
                     ProgressView()
                 } else {
                     List(movieListViewModel.movies){ movie in
-                     //   let releaseYear = Date(selectedMovie?.releaseDate).get(.year)
+                   
                                 if let imageUrl = movie.posterURL {
                                     Button(action: {
-                                        selectedMovie = movie
+                                    selectedMovie = movie
                                     }) {
                                      
                                         HStack(spacing: 0){
@@ -52,11 +52,6 @@ struct MoviesListView: View {
                                             }
                                                 .background(.black)
                                                 .cornerRadius(18)
-                                       
-                                        
-                                            
-                                    
-                                          
                                         
                                     }
                                     
@@ -69,6 +64,8 @@ struct MoviesListView: View {
             .navigationTitle("Movies")
             .sheet(item: $selectedMovie) { movie in
                 // go to details screen
+                MovieDetailsView(movieDetailsViewModel: movieListViewModel.launchMovieDetailsData(), movieId: movie.id)
+         
             }
             .onAppear {
                 movieListViewModel.fetchMovies()

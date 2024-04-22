@@ -17,7 +17,9 @@ struct MovieDBApp: App {
                 let viewModel = MoviesListViewModel(movieRepository: movieRepository)
                 MoviesListView(movieListViewModel: viewModel)
             }
+        
         }
+    
     }
 
 
