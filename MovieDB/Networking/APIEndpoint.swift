@@ -9,7 +9,7 @@ import Foundation
 
 
 enum APIEndpoint {
-    case moviesList
+    case moviesList(page: Int)
     case movieDetails(id: Int)
 }
 
@@ -49,8 +49,8 @@ extension APIEndpoint: EndPoint {
     
     var parameters: [String: String] {
         switch self {
-        case .moviesList:
-            return ["api_key": apiKey, "limit": "10"]
+        case .moviesList(let page):
+            return ["api_key": apiKey, "limit": "10", "page": String(page)]
         case .movieDetails:
             return ["api_key": apiKey]
         }

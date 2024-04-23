@@ -7,7 +7,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
-
+import SwiftUIInfiniteList
 struct MoviesListView: View {
     
     @State private var selectedMovie: Movie? = nil
@@ -19,7 +19,11 @@ struct MoviesListView: View {
                 if movieListViewModel.movies.isEmpty {
                     ProgressView()
                 } else {
-                    List(movieListViewModel.movies){ movie in
+                 
+                     InfiniteList(data: $movieListViewModel.movies,
+                                          isLoading: $movieListViewModel.isLoading,
+                                          loadingView: ProgressView(),
+                                          loadMore: movieListViewModel.loadMore) { movie in
                    
                                 if let imageUrl = movie.posterURL {
                                     Button(action: {
@@ -52,6 +56,7 @@ struct MoviesListView: View {
                                             }
                                                 .background(.black)
                                                 .cornerRadius(18)
+                                                .accessibilityIdentifier("MovieListItem")
                                         
                                     }
                                     

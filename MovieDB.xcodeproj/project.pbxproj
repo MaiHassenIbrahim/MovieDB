@@ -11,7 +11,7 @@
 		229237042BD3CA3F004FFF57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237032BD3CA3F004FFF57 /* ContentView.swift */; };
 		229237062BD3CA40004FFF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229237052BD3CA40004FFF57 /* Assets.xcassets */; };
 		229237092BD3CA40004FFF57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229237082BD3CA40004FFF57 /* Preview Assets.xcassets */; };
-		229237132BD3CA41004FFF57 /* MovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237122BD3CA41004FFF57 /* MovieDBTests.swift */; };
+		229237132BD3CA41004FFF57 /* MovieProviderRemoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237122BD3CA41004FFF57 /* MovieProviderRemoteTest.swift */; };
 		2292371D2BD3CA41004FFF57 /* MovieDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292371C2BD3CA41004FFF57 /* MovieDBUITests.swift */; };
 		2292371F2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292371E2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift */; };
 		2292378E2BD458E8004FFF57 /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292378D2BD458E8004FFF57 /* MovieAPIService.swift */; };
@@ -25,6 +25,10 @@
 		229237AB2BD5A18D004FFF57 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237AA2BD5A18D004FFF57 /* MovieDetailsView.swift */; };
 		229237AD2BD5A1C7004FFF57 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237AC2BD5A1C7004FFF57 /* MovieDetailsViewModel.swift */; };
 		229237AF2BD5A205004FFF57 /* MovieDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237AE2BD5A205004FFF57 /* MovieDetailsRepository.swift */; };
+		229237B22BD79ADE004FFF57 /* SwiftUIInfiniteList in Frameworks */ = {isa = PBXBuildFile; productRef = 229237B12BD79ADE004FFF57 /* SwiftUIInfiniteList */; };
+		229237B52BD7ADA1004FFF57 /* MockMovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237B42BD7ADA1004FFF57 /* MockMovieData.swift */; };
+		229237B92BD7BE65004FFF57 /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237B82BD7BE65004FFF57 /* MockApiService.swift */; };
+		229237BB2BD7BFE8004FFF57 /* MovieProviderLocalTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229237BA2BD7BFE8004FFF57 /* MovieProviderLocalTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,7 @@
 		229237052BD3CA40004FFF57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229237082BD3CA40004FFF57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2292370E2BD3CA41004FFF57 /* MovieDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		229237122BD3CA41004FFF57 /* MovieDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBTests.swift; sourceTree = "<group>"; };
+		229237122BD3CA41004FFF57 /* MovieProviderRemoteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProviderRemoteTest.swift; sourceTree = "<group>"; };
 		229237182BD3CA41004FFF57 /* MovieDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2292371C2BD3CA41004FFF57 /* MovieDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBUITests.swift; sourceTree = "<group>"; };
 		2292371E2BD3CA41004FFF57 /* MovieDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -65,6 +69,9 @@
 		229237AA2BD5A18D004FFF57 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		229237AC2BD5A1C7004FFF57 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		229237AE2BD5A205004FFF57 /* MovieDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsRepository.swift; sourceTree = "<group>"; };
+		229237B42BD7ADA1004FFF57 /* MockMovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieData.swift; sourceTree = "<group>"; };
+		229237B82BD7BE65004FFF57 /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
+		229237BA2BD7BFE8004FFF57 /* MovieProviderLocalTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProviderLocalTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229237B22BD79ADE004FFF57 /* SwiftUIInfiniteList in Frameworks */,
 				229237972BD46A01004FFF57 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +146,9 @@
 		229237112BD3CA41004FFF57 /* MovieDBTests */ = {
 			isa = PBXGroup;
 			children = (
-				229237122BD3CA41004FFF57 /* MovieDBTests.swift */,
+				229237B32BD7AD29004FFF57 /* Mock */,
+				229237122BD3CA41004FFF57 /* MovieProviderRemoteTest.swift */,
+				229237BA2BD7BFE8004FFF57 /* MovieProviderLocalTest.swift */,
 			);
 			path = MovieDBTests;
 			sourceTree = "<group>";
@@ -247,6 +257,15 @@
 			path = MovieDetailsViewModel;
 			sourceTree = "<group>";
 		};
+		229237B32BD7AD29004FFF57 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				229237B42BD7ADA1004FFF57 /* MockMovieData.swift */,
+				229237B82BD7BE65004FFF57 /* MockApiService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +284,7 @@
 			name = MovieDB;
 			packageProductDependencies = (
 				229237962BD46A01004FFF57 /* SDWebImageSwiftUI */,
+				229237B12BD79ADE004FFF57 /* SwiftUIInfiniteList */,
 			);
 			productName = MovieDB;
 			productReference = 229236FE2BD3CA3F004FFF57 /* MovieDB.app */;
@@ -340,6 +360,7 @@
 			mainGroup = 229236F52BD3CA3F004FFF57;
 			packageReferences = (
 				229237952BD46A01004FFF57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				229237B02BD79ADE004FFF57 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */,
 			);
 			productRefGroup = 229236FF2BD3CA3F004FFF57 /* Products */;
 			projectDirPath = "";
@@ -402,7 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229237132BD3CA41004FFF57 /* MovieDBTests.swift in Sources */,
+				229237B92BD7BE65004FFF57 /* MockApiService.swift in Sources */,
+				229237BB2BD7BFE8004FFF57 /* MovieProviderLocalTest.swift in Sources */,
+				229237B52BD7ADA1004FFF57 /* MockMovieData.swift in Sources */,
+				229237132BD3CA41004FFF57 /* MovieProviderRemoteTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +760,14 @@
 				minimumVersion = 3.0.2;
 			};
 		};
+		229237B02BD79ADE004FFF57 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-infinite-list";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -743,6 +775,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 229237952BD46A01004FFF57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		229237B12BD79ADE004FFF57 /* SwiftUIInfiniteList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 229237B02BD79ADE004FFF57 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */;
+			productName = SwiftUIInfiniteList;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

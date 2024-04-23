@@ -36,6 +36,6 @@ struct Movie: Decodable, Hashable, Identifiable {
     }
 }
 
-struct MovieListResponse: Decodable {
+struct MovieListResponse: Decodable, Equatable {
     let results: [Movie]
 }

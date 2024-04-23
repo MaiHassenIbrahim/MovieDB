@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol MoviesListRepository {
-    func fetchMovies() -> AnyPublisher<[Movie], Error>
+    func fetchMovies(page: Int) -> AnyPublisher<[Movie], Error>
 }
 
 class MovieDataRepository: MoviesListRepository {
@@ -19,8 +19,8 @@ class MovieDataRepository: MoviesListRepository {
         self.apiService = apiService
     }
     
-    func fetchMovies() -> AnyPublisher<[Movie], Error> {
-        let endpoint = APIEndpoint.moviesList
+    func fetchMovies(page: Int) -> AnyPublisher<[Movie], Error> {
+        let endpoint = APIEndpoint.moviesList(page: page)
         return apiService.request(endpoint: endpoint)
             .map { (response: MovieListResponse) -> [Movie] in
                 return Array(response.results.prefix(10))
